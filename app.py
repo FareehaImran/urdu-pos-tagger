@@ -108,8 +108,8 @@ st.markdown('<div class="sub-title">Part-of-Speech Tagging for Urdu Text using M
 # ── STATS ──
 c1, c2, c3, c4 = st.columns(4)
 for col, num, label in zip([c1,c2,c3,c4],
-    ["94.5%","11K+","16","3"],
-    ["Best Accuracy","Training Sentences","POS Tag Types","Models Trained"]):
+  ["96.4%", "16K+", "16", "5"],
+  ["Best Accuracy", "Training Sentences", "POS Tag Types", "Models Trained"]):
     col.markdown(f'<div class="stat-card"><div class="stat-number">{num}</div>'
                  f'<div class="stat-label">{label}</div></div>', unsafe_allow_html=True)
 
@@ -200,8 +200,8 @@ st.markdown('<div class="section-header">📊 Model Performance Comparison</div>
 
 m1, m2, m3 = st.columns(3)
 for col, name, acc, f1, color in zip([m1,m2,m3],
-    ["Logistic Regression","BiLSTM","Transformer"],
-    ["85.43%","93.37%","94.52%"],
+    ["Logistic Regression","BiLSTM","XLM-RoBERTa"],
+    ["87.18%","96.28%","~96.5%"],
     ["75.42%","85.02%","85.80%"],
     ["#64748b","#a78bfa","#34d399"]):
     col.markdown(
