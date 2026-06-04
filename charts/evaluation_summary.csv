@@ -1,4 +1,0 @@
-Model,Accuracy,Precision,Recall,F1 Macro
-Logistic Regression,0.8543,0.7312,0.83,0.7542
-BiLSTM,0.9337,0.8525,0.8481,0.8502
-Transformer,0.9466,0.8516,0.8598,0.8554
